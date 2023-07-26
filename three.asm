@@ -106,3 +106,10 @@ section .text
         mov rdi,1
         syscall
     ret
+
+; Output
+; The Array contains the elements : 
+; 11 59 33 22 44 
+
+; The Largest number in the array is : 59 
+
