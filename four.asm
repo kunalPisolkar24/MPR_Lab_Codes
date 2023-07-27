@@ -1,3 +1,5 @@
+;Write an X86/64 ALP to count the number of positive and negative numbers from the array.
+
 %macro IO 4
     mov rax, %1
     mov rdi, %2
