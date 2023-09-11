@@ -1,3 +1,7 @@
+; Write X86/64 ALP to convert 4-digit Hex number into its equivalent BCD number and 5-digit BCD number into its equivalent HEX number. 
+; Make your program user-friendly to accept the choice from the user for: (a) HEX to BCD (b) BCD to HEX (c) EXIT.
+; Display proper strings to prompt the user while accepting the input and displaying the result. (Wherever necessary, use 64-bit registers).
+
 %macro IO 4
 	mov rax, %1
 	mov rdi, %2
@@ -16,8 +20,8 @@ section .data
 	ano_len equ $ - ano
 
 	menu db 10,"1.HEX to BCD", 
-	db 10, "2. BCD to HEX",
-	db 10, "3. Exit",
+	db 10, "2.BCD to HEX",
+	db 10, "3.Exit",
 	db 10, "Enter your choice: "
 	menu_len equ $ - menu
 
@@ -211,21 +215,21 @@ section .text
 ; -------------------------------------------------
 
 ; 1.HEX to BCD
-; 2. BCD to HEX
-; 3. Exit
+; 2.BCD to HEX
+; 3.Exit
 ; Enter your choice: 1
 
 ; Enter 4 digit Hex number >> abcd 
 ; 43981
 ; 1.HEX to BCD
-; 2. BCD to HEX
-; 3. Exit
+; 2.BCD to HEX
+; 3.Exit
 ; Enter your choice: 2
 
 ; Enter 5 digit BCD number >> 43981
 
 ; The Equivalent HEX number is >> ABCD
 ; 1.HEX to BCD
-; 2. BCD to HEX
-; 3. Exit
+; 2.BCD to HEX
+; 3.Exit
 ; Enter your choice: 3
